@@ -7,14 +7,39 @@
 //
 
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var goButton: UIButton!
+    
+    let observable = Observable.of(1,2,3)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.goButton.addTarget(self, action: #selector(goSecondPage), for: .touchUpInside)
+        
+        observable.subscribe(onNext: { i in
+            print("first:", i)
+        }, onCompleted: {
+            print("first completed!")
+        })
+        
+        
     }
-
+    
+    @objc func goSecondPage() {
+        
+        observable.subscribe(onNext: { i in
+            print("second:", i)
+        })
+        
+        let sVC = SecondViewController()
+        self.present(sVC, animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -14,6 +14,7 @@
 		65E7FECE214A41B3007DC227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E7FECD214A41B3007DC227 /* Assets.xcassets */; };
 		65E7FED1214A41B3007DC227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E7FECF214A41B3007DC227 /* LaunchScreen.storyboard */; };
 		65E7FEDC214A41B3007DC227 /* RxSwiftLearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E7FEDB214A41B3007DC227 /* RxSwiftLearningUITests.swift */; };
+		65E7FEE7214A4AFA007DC227 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E7FEE6214A4AFA007DC227 /* SecondViewController.swift */; };
 		BBC21F5BE5A2A8F0C5113A48 /* Pods_RxSwiftLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81984056F90E94A0265A621 /* Pods_RxSwiftLearning.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		65E7FED7214A41B3007DC227 /* RxSwiftLearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftLearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E7FEDB214A41B3007DC227 /* RxSwiftLearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftLearningUITests.swift; sourceTree = "<group>"; };
 		65E7FEDD214A41B3007DC227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65E7FEE6214A4AFA007DC227 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		6DAE726E81CAC3DBEA7CBA6E /* Pods_RxSwiftLearningUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftLearningUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96ACAB48DA459755062EB120 /* Pods-RxSwiftLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftLearning/Pods-RxSwiftLearning.release.xcconfig"; sourceTree = "<group>"; };
 		B81984056F90E94A0265A621 /* Pods_RxSwiftLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 			children = (
 				65E7FEC6214A41B3007DC227 /* AppDelegate.swift */,
 				65E7FEC8214A41B3007DC227 /* ViewController.swift */,
+				65E7FEE6214A4AFA007DC227 /* SecondViewController.swift */,
 				65E7FECA214A41B3007DC227 /* Main.storyboard */,
 				65E7FECD214A41B3007DC227 /* Assets.xcassets */,
 				65E7FECF214A41B3007DC227 /* LaunchScreen.storyboard */,
@@ -235,15 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-RxSwiftLearning-checkManifestLockResult.txt",
 			);
@@ -257,15 +256,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-RxSwiftLearningUITests-checkManifestLockResult.txt",
 			);
@@ -279,16 +274,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftLearning/Pods-RxSwiftLearning-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -305,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E7FEE7214A4AFA007DC227 /* SecondViewController.swift in Sources */,
 				65E7FEC9214A41B3007DC227 /* ViewController.swift in Sources */,
 				65E7FEC7214A41B3007DC227 /* AppDelegate.swift in Sources */,
 			);
@@ -465,7 +457,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mengxiangjian.RxSwiftLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -480,7 +472,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mengxiangjian.RxSwiftLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
