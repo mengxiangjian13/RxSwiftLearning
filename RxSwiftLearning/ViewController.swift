@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     let observable = Observable.of(1,2,3)
     
+    let bag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,7 +27,7 @@ class ViewController: UIViewController {
             print("first:", i)
         }, onCompleted: {
             print("first completed!")
-        })
+        }).disposed(by: bag)
         
         
     }
@@ -34,7 +36,7 @@ class ViewController: UIViewController {
         
         observable.subscribe(onNext: { i in
             print("second:", i)
-        })
+        }).disposed(by: bag)
         
         let sVC = SecondViewController()
         self.present(sVC, animated: true, completion: nil)
