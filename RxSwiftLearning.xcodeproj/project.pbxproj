@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		2D05D46EA7400396B4AD59F0 /* Pods-RxSwiftLearningUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftLearningUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftLearningUITests/Pods-RxSwiftLearningUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6543ACD921A4FA8C0058C833 /* RxSwiftCharpter2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftCharpter2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		65E7FEC3214A41B3007DC227 /* RxSwiftLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E7FEC6214A41B3007DC227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65E7FEC8214A41B3007DC227 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +108,7 @@
 				65E7FECD214A41B3007DC227 /* Assets.xcassets */,
 				65E7FECF214A41B3007DC227 /* LaunchScreen.storyboard */,
 				65E7FED2214A41B3007DC227 /* Info.plist */,
+				6543ACD921A4FA8C0058C833 /* RxSwiftCharpter2.playground */,
 			);
 			path = RxSwiftLearning;
 			sourceTree = "<group>";
